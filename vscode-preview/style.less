@@ -11,7 +11,23 @@ h2 {
 }
 
 h3 { 
-  padding: 0 10px; border-left: 2px solid #303134;
+  padding: 0 10px; border-left: 2px solid #686768; /* light主题下的黑色，在dark主题下看不清。所以修改为MacOS Dark VI灰色高亮*/
+}
+
+h4 {
+  padding: 0 10px; border-left: 2px solid #686768;
+}
+
+h4 {
+  padding: 0 10px; border-left: 2px solid #686768;
+}
+
+h5 {
+  padding: 0 10px; border-left: 1px solid #686768;
+}
+
+h6 {
+  padding: 0 10px; border-left: 0.5px solid #686768;
 }
 
 b,
@@ -21,13 +37,6 @@ strong {
 
 b,
 em {
-  font-weight: 700;
-  color:#3479F6;
-  font-style: normal;
-}
-
-b,
-em strong {
   font-weight: 700;
   color:#EC605C;
   font-style: normal;
@@ -67,5 +76,17 @@ blockquote:after {
   line-height: 1em;
   font-weight: 700;
 }
+
+/* inner code 代码 */
+
+li code {
+  border-radius: 3px;
+  font-size: 95%; /*从85%偏小的，加大*/
+  font-family: MonoLisa, "Fira Code", Monaco, Menlo, Consolas, "COURIER NEW", monospace;
+  padding: .2em .4em !important;
+  color: #EC605C;
+  font-size: 16px;
+}
+
   
 }
