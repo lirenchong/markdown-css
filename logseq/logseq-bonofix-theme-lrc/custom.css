@@ -442,7 +442,7 @@ html ::-webkit-scrollbar-thumb:hover {
     border-bottom: 0
 }
 
-/* 各级标题，增加左侧线条*/
+/* 各级标题，增加左侧线条；light主题下的黑色，在dark主题下看不清。所以修改为MacOS Light VI灰色高亮*/
 
 .content h1 {
     padding: 0 10px; border-left: 8px solid #EC605C;
@@ -466,6 +466,22 @@ html ::-webkit-scrollbar-thumb:hover {
 
 .content h6 {
     padding: 0 10px; border-left: 0.5px solid #303134;
+}
+
+.dark-theme .content h3 {
+    padding: 0 10px; border-left: 4px solid #E0DFE0;
+}
+
+.dark-theme .content h4 {
+    padding: 0 10px; border-left: 2px solid #E0DFE0;
+}
+
+.dark-theme .content h5 {
+    padding: 0 10px; border-left: 1px solid #E0DFE0;
+}
+
+.dark-theme .content h6 {
+    padding: 0 10px; border-left: 0.5px solid #E0DFE0;
 }
 
 .content .editor-inner textarea {
