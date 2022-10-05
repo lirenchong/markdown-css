@@ -71,8 +71,8 @@
  
 /* 二级标题内容 */
 #nice h2 .content {
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 800;
     color: #222;
     display: inline-block;
     padding-left: 10px;
@@ -87,24 +87,38 @@
  
 /* 三级标题内容 */
 #nice h3 .content {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 700;
     color: #222;
-   padding: 0 10px; border-left: 2px solid #303134;
+    padding: 0 10px; 
+    border-left: 2px solid #303134;
  }
  
  /* 三级标题修饰 请参考有实例的主题 */
  #nice h3:after {}
 
  #nice h4 .content{
-    padding: 0 10px; border-left: 2px solid #303134;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    padding: 0 10px; 
+    border-left: 2px solid #686768;
 }
 
 #nice h5 .content{
-    padding: 0 10px; border-left: 1px solid #303134;
+    font-size: 16px;
+    font-weight: 500;
+    color: #222;
+    padding: 0 10px; 
+    border-left: 1px solid #303134;
 }
 
 #nice h6 .content{
-    padding: 0 10px; border-left: 0.5px solid #303134;
+    font-size: 16px;
+    font-weight: 400;
+    color: #222;
+    padding: 0 10px; 
+    border-left: 0.5px solid #686768;
 }
  
  /* 无序列表整体样式
@@ -248,7 +262,7 @@
  /* 行内代码 */
  #nice p code,
  #nice li code {
-     color: rgb(48, 124, 246);
+     color: #EC605C;
      font-size: 16px;
  }
  

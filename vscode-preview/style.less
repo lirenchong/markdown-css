@@ -47,13 +47,12 @@ img { max-width: 95%;border-radius: 13px; margin: 0px auto; display: block;}
 hr {height: 1px; padding: 0; border: none; border-top: medium solidid rgb(255, 255, 255); text-align: center; background-image: linear-gradient(to right, rgb(255, 255, 255), #EC605C, rgb(255, 255, 255));}
 
 blockquote:before {
-  display: inline-block;
   content: "“";
+  display: block;
   font-size: 2em;
-  color: #EC605C;;
-  margin-top: 10px;
+  color: #989798; /*不需要红色，那么亮眼，会喧宾夺主*/
   font-family: Arial, serif;
-  line-height: 1em;
+  line-height: 1.8em;
   font-weight: 700;
 }
 
@@ -64,17 +63,6 @@ blockquote {
   border-bottom: 2em solid color(#ececec);
   background-color: #ececec;
   font-weight: 400;
-}
-
-blockquote:after {
-  display:inline;
-  float: right;
-  content: "”";
-  font-size: 2em;
-  color: #EC605C;
-  font-family: Arial, serif;
-  line-height: 1em;
-  font-weight: 700;
 }
 
 /* inner code 代码 */
