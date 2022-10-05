@@ -95,15 +95,15 @@
  /* 三级标题修饰 请参考有实例的主题 */
  #nice h3:after {}
 
- #nice .content h4 {
+ #nice h4 .content{
     padding: 0 10px; border-left: 2px solid #303134;
 }
 
-#nice .content h5 {
+#nice h5 .content{
     padding: 0 10px; border-left: 1px solid #303134;
 }
 
-#nice .content h6 {
+#nice h6 .content{
     padding: 0 10px; border-left: 0.5px solid #303134;
 }
  
@@ -170,25 +170,14 @@
      display: block;
  }
  
- #nice .multiquote-1:after {
-     content: "”";
-     float: right;
-     display: block;
-     font-size: 2em;
-     color: #989798;
-     font-family: Arial, serif;
-     line-height: 1em;
-     font-weight: 700;
- }
- 
  /* 链接 
  
  * border-bottom: 1px solid #009688;
    */
    #nice a {
-     color: rgb(248, 57, 41);
+     color: #0969da;
      font-weight: 400;
-     border-bottom: 1px solid rgb(248, 57, 41);
+     border-bottom: 1px solid #0969da;
  
  }
  
