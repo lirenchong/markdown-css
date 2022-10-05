@@ -545,7 +545,7 @@ html ::-webkit-scrollbar-thumb:hover {
     font-size: 95%; /*从85%偏小的，加大*/
     font-family: MonoLisa, "Fira Code", Monaco, Menlo, Consolas, "COURIER NEW", monospace;
     padding: .2em .4em !important;
-    color: #EC605C;
+    color: #3479F6;
     background-color: #f5f5f5;
 }
 
@@ -554,7 +554,7 @@ html ::-webkit-scrollbar-thumb:hover {
     font-size: 95%;
     font-family: MonoLisa, "Fira Code", Monaco, Menlo, Consolas, "COURIER NEW", monospace;
     padding: .2em .4em !important;
-    color: #EC605C;
+    color: #58a6ff;
     background-color: var(--ls-page-inline-code-bg-color)
 }
 
