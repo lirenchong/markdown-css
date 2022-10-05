@@ -33,7 +33,7 @@ Block ref：👆🏻 #3★可用
 
 ![https://grogu-theme.francis.run/images/grogu1.gif](https://grogu-theme.francis.run/images/grogu1.gif)
 
- ![《人类网络》](http://lirenchong.jirankeji.com/img/202210010728655.jpeg)
+![《人类网络》](http://lirenchong.jirankeji.com/img/202210010728655.jpeg)
 
 ---
 
