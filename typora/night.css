@@ -3,9 +3,9 @@
 @import "night/sourcemode.dark.css";
 
 :root {
-    --bg-color:  #363B40;
+    --bg-color:  #303134;
     --side-bar-bg-color: #2E3033;
-    --text-color: #b8bfc6;
+    --text-color: #DFDFE0;
 
     --select-text-bg-color:#4a89dc;
 
@@ -124,6 +124,7 @@ h1 {
     margin-bottom: 1.5rem;
     /* 24px */
     letter-spacing: -1.5px;
+    padding: 0 10px; border-left: 8px solid #EC605C;
 }
 
 h2 {
@@ -135,6 +136,7 @@ h2 {
     /* 24px */
     letter-spacing: -1px;
     font-weight: bold;
+    padding: 0 10px; border-left: 4px solid #EC605C;
 }
 
 h3 {
@@ -146,6 +148,7 @@ h3 {
     /* 24px */
     letter-spacing: -1px;
     font-weight: bold;
+    padding: 0 10px; border-left: 4px solid #E0DFE0;
 }
 
 h4 {
@@ -156,6 +159,7 @@ h4 {
     margin-bottom: 1.5rem;
     /* 24px */
     color: white;
+    padding: 0 10px; border-left: 2px solid #E0DFE0;
 }
 
 h5 {
@@ -166,6 +170,7 @@ h5 {
     margin-bottom: 1.5rem;
     /* 24px */
     font-weight: bold;
+    padding: 0 10px; border-left: 1px solid #E0DFE0;
 }
 
 h6 {
@@ -175,6 +180,7 @@ h6 {
     /* 16px */
     margin-bottom: 0.75rem;
     color: white;
+    padding: 0 10px; border-left: 0.5px solid #E0DFE0;
 }
 
 @media (min-width: 980px) {
@@ -218,10 +224,6 @@ h6 {
 
 a {
     text-decoration: none;
-    outline: 0;
-}
-
-a:hover {
     outline: 0;
 }
 
@@ -312,6 +314,23 @@ cite {
     font-style: italic;
 }
 
+b,
+em {
+  font-weight: 700;
+  color:#EC605C;
+  font-style: normal;
+}
+
+blockquote::before {
+    content: "“";
+    display: block;
+    font-size: 2em;
+    color: #989798; /*不需要红色，那么亮眼，会喧宾夺主*/
+    font-family: Arial, serif;
+    line-height: 1em;
+    font-weight: 700;
+}
+
 blockquote {
     padding-left: 1.875rem;
     margin: 0 0 1.875rem 1.875rem;
@@ -325,8 +344,10 @@ code,
 kbd,
 tt,
 var {
-    font-size: 0.875em;
+    font-size: 0.95em;
     font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    color: #58a6ff;
+    background-color: #8C8B8C;
 }
 
 code,
@@ -397,12 +418,13 @@ h1 {
 }
 
 a {
-    color: #e0e0e0;
     text-decoration: underline;
+    color: #58a6ff; /* 统一link链接蓝色 */
 }
 
 a:hover {
-    color: #fff;
+    outline: 0;
+    color: #6C566F; /* link链接悬浮用MacOS Dark VI 紫色 */
 }
 
 .md-inline-math script {

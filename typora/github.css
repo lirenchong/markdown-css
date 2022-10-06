@@ -74,8 +74,28 @@ body {
 }
 
 a {
-    color: #4183C4;
+    color: #0969da; /* link链接颜色统一蓝色 */
 }
+
+a:hover {
+    outline: 0;
+    color: #8A4291; /* link链接悬浮用MacOS Light VI 紫色 */
+}
+
+/* 斜体变粗红，黑体不变 */
+
+b,
+strong {
+  font-weight: 700;
+}
+
+b,
+em {
+  font-weight: 700;
+  color:#EC605C;
+  font-style: normal;
+}
+
 h1,
 h2,
 h3,
@@ -125,11 +145,13 @@ h1 {
     font-size: 2.25em;
     line-height: 1.2;
     border-bottom: 1px solid #eee;
+    padding: 0 10px; border-left: 8px solid #EC605C;
 }
 h2 {
     font-size: 1.75em;
     line-height: 1.225;
     border-bottom: 1px solid #eee;
+    padding: 0 10px; border-left: 4px solid #EC605C;
 }
 
 /*@media print {
@@ -152,16 +174,20 @@ h2 {
 h3 {
     font-size: 1.5em;
     line-height: 1.43;
+    padding: 0 10px; border-left: 2px solid #686768; /* light主题下的黑色，在dark主题下看不清。所以修改为MacOS Dark VI灰色高亮*/
 }
 h4 {
     font-size: 1.25em;
+    padding: 0 10px; border-left: 2px solid #686768;
 }
 h5 {
     font-size: 1em;
+    padding: 0 10px; border-left: 1px solid #686768;
 }
 h6 {
    font-size: 1em;
     color: #777;
+    padding: 0 10px; border-left: 0.5px solid #686768;
 }
 p,
 blockquote,
@@ -200,10 +226,20 @@ ul:last-child,
 ol:last-child {
     margin-bottom: 0;
 }
+blockquote:before {
+    content: "“";
+    display: block;
+    font-size: 2em;
+    color: #989798; /*不需要红色，那么亮眼，会喧宾夺主*/
+    font-family: Arial, serif;
+    line-height: 1.8em;
+    font-weight: 700;
+  }
 blockquote {
     border-left: 4px solid #dfe2e5;
     padding: 0 15px;
     color: #777777;
+    border-bottom: 18px;
 }
 blockquote blockquote {
     padding-right: 0;
@@ -259,7 +295,8 @@ tt {
     border-radius: 3px;
     padding: 0;
     padding: 2px 4px 0px 4px;
-    font-size: 0.9em;
+    font-size: 0.95em;
+    color: #3479F6; /* inner code 蓝色*/
 }
 
 code {
