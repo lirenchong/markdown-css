@@ -353,7 +353,8 @@ var {
 code,
 tt,
 var {
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(135, 131, 120, 0.15); /* inline code 的底色*/
+    border-radius: 3px;
 }
 
 kbd {
@@ -424,7 +425,7 @@ a {
 
 a:hover {
     outline: 0;
-    color: #6C566F; /* link链接悬浮用MacOS Dark VI 紫色 */
+    color: #6955A3; /* link链接悬浮用MacOS Dark VI 紫色 */
 }
 
 .md-inline-math script {
