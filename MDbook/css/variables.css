@@ -91,10 +91,10 @@
 }
 
 .light {
-    --bg: hsl(0, 0%, 100%);
-    --fg: hsl(0, 0%, 0%);
+    --bg:  #ffffff;
+    --fg: #232223;
 
-    --sidebar-bg: #fafafa;
+    --sidebar-bg: #E0DFE0;
     --sidebar-fg: hsl(0, 0%, 0%);
     --sidebar-non-existant: #aaaaaa;
     --sidebar-active: #1f1fff;
@@ -105,16 +105,16 @@
     --icons: #747474;
     --icons-hover: #000000;
 
-    --links: #20609f;
+    --links: #0969da; /* link链接颜色统一蓝色 */
 
-    --inline-code-color: #301900;
+    --inline-code-color: #3479F6; /* inline code颜色设置蓝色 */
 
     --theme-popup-bg: #fafafa;
     --theme-popup-border: #cccccc;
     --theme-hover: #e6e6e6;
 
-    --quote-bg: hsl(197, 37%, 96%);
-    --quote-border: hsl(197, 37%, 91%);
+    --quote-bg: #f5f5f5; /* 引用背景浅灰*/
+    --quote-border: hsla(198, 38%, 91%, 0.581);
 
     --table-border-color: hsl(0, 0%, 95%);
     --table-header-bg: hsl(0, 0%, 80%);

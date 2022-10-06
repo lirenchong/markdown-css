@@ -23,7 +23,8 @@ body {
 
 code {
     font-family: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace !important;
-    font-size: 0.875em; /* please adjust the ace font size accordingly in editor.js */
+    font-size: 0.95em; /* please adjust the ace font size accordingly in editor.js */
+    /* inner code 此处的颜色，需要在variables.css修改*/
 }
 
 /* make long words/inline code not x overflow */
@@ -47,8 +48,15 @@ h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
 .hide-boring .boring { display: none; }
 .hidden { display: none !important; }
 
-h2, h3 { margin-top: 2.5em; }
+h2, h3 { margin-top: 2.5em;}
 h4, h5 { margin-top: 2em; }
+
+h1 {padding: 0 10px; border-left: 8px solid #EC605C;}
+h2 { padding: 0 10px; border-left: 4px solid #EC605C;}
+h3 { padding: 0 10px; border-left: 2px solid #303134;}
+h4 {padding: 0 10px; border-left: 2px solid #303134;}
+h5 {padding: 0 10px; border-left: 1px solid #303134;}
+h6 {padding: 0 10px; border-left: 0.5px solid #303134;}
 
 .header + .header h3,
 .header + .header h4,
@@ -62,10 +70,10 @@ h3:target::before,
 h4:target::before,
 h5:target::before,
 h6:target::before {
-    display: inline-block;
+/*    display: inline-block;
     content: "»";
     margin-left: -30px;
-    width: 30px;
+    width: 30px;*/
 }
 
 /* This is broken on Safari as of version 14, but is fixed
@@ -97,12 +105,29 @@ h6:target::before {
     margin-right: auto;
     max-width: var(--content-max-width);
 }
-.content p { line-height: 1.45em; }
+.content p { line-height: 1.45em; font-weight: 400;}
+
+/* 增加粗体、蓝色斜体、红色粗斜体*/
+.content em { line-height: 1.45em; color: rgb(248, 57, 41);font-style: normal;
+font-weight: 700;}
+.content strong { line-height: 1.45em;font-style: normal;
+    font-weight: 700;}
+
 .content ol { line-height: 1.45em; }
 .content ul { line-height: 1.45em; }
-.content a { text-decoration: none; }
-.content a:hover { text-decoration: underline; }
-.content img, .content video { max-width: 100%; }
+.content a { 
+    text-decoration: underline; 
+    /* link链接颜色统一蓝色，须在variable.css中设置 */
+} 
+.content a:hover { 
+    text-decoration: underline; 
+    color: #8A4291; /* link链接悬浮用MacOS Light VI 紫色 */
+} 
+.content img, .content video { max-width: 95%; }
+/* 图片赋予block块，圆角和Mac程序一样，居中 */
+.content img { border-radius: 13px; margin: 0px auto; display: block;}
+/* */
+.content hr {height: 1px; padding: 0; border: none; border-top: medium solidid #333; text-align: center; background-image: linear-gradient(to right, rgba(248, 57, 41, 0), rgba(248, 57, 41, 0.75), rgba(248, 57, 41, 0));}
 .content .header:link,
 .content .header:visited {
     color: var(--fg);
@@ -138,16 +163,27 @@ table tbody tr:nth-child(2n) {
     background: var(--table-alternate-bg);
 }
 
+blockquote:before {
+    display: inline-block;
+    content: "“";
+    font-size: 2em;
+    color: #989798; /*不需要红色，那么亮眼，会喧宾夺主*/
+    margin-top: 10px;
+    font-family: Arial, serif;
+    line-height: 1em;
+    font-weight: 700;
+}
 
 blockquote {
     margin: 20px 0;
+    display: block;
+    border-radius: 13px;
     padding: 0 20px;
     color: var(--fg);
     background-color: var(--quote-bg);
     border-top: .1em solid var(--quote-border);
-    border-bottom: .1em solid var(--quote-border);
+    border-bottom: 1em solid var(--quote-bg);
 }
-
 
 :not(.footnote-definition) + .footnote-definition,
 .footnote-definition + :not(.footnote-definition) {
