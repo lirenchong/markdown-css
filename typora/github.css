@@ -296,10 +296,11 @@ tt {
     padding: 0;
     padding: 2px 4px 0px 4px;
     font-size: 0.95em;
-    color: #3479F6; /* inner code 蓝色*/
+    color: #232223; /* code 黑色*/
 }
 
 code {
+    color: #3479F6; /* inner code 蓝色*/
     background-color: #f3f4f4;
     padding: 0 2px 0 2px;
 }
