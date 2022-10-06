@@ -346,13 +346,14 @@ tt,
 var {
     font-size: 0.95em;
     font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-    color: #58a6ff;
-    background-color: #8C8B8C;
+    color: #fefefe; /* code 代码区文字颜色*/
+    background-color: #8C8B8C; /* 此处设置 code 底色无效？ */
 }
 
 code,
 tt,
 var {
+    color: #3479F6; /* inline 代码区文字颜色*/
     background: rgba(135, 131, 120, 0.15); /* inline code 的底色*/
     border-radius: 3px;
 }
