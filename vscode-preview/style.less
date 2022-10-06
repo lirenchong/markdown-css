@@ -63,7 +63,18 @@ blockquote {
   border-bottom: 2em solid color(#ececec);
   background-color: #ececec;
   font-weight: 400;
+
+  p {
+  color:#4e4e4e; 
+  }
+
+  strong {
+    color:#4e4e4e; /* 修正dark theme下灰底引用字色白色的问题 */
+  }
 }
+
+
+
 
 /* inner code 代码 */
 
@@ -72,9 +83,9 @@ p code {
   font-size: 95%; /*从85%偏小的，加大*/
   font-family: MonoLisa, "Fira Code", Monaco, Menlo, Consolas, "COURIER NEW", monospace;
   color: #3479F6;
+  background-color: rgba(138, 138, 138, 0.137);
   font-size: 16px;
 }
-
 
   
 }

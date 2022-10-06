@@ -450,7 +450,7 @@ blockquote {
 }
 
 table a {
-    color: #DEDEDE;
+    /*color: #DEDEDE;  /* table 链接效果统一，不需要单独弄成白色*/
     /* variable */
 }
 
