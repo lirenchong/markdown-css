@@ -1,11 +1,9 @@
 @mixin base_dark {
   color: $fg-color-dark;
   background-color: $bg-color-dark;
-
   a {
     color: $link-color-dark;
   }
-
   h1,
   h2,
   h3,
@@ -13,11 +11,9 @@
   h5,
   h6 {
     color: $alt-fg-color-dark;
-
     &:hover .heading-link {
       visibility: visible;
     }
-
     .heading-link {
       color: $link-color-dark;
       font-weight: inherit;
@@ -25,100 +21,71 @@
       font-size: 80%;
       visibility: hidden;
     }
-
     .title-link {
       color: inherit;
       font-weight: inherit;
       text-decoration: none;
     }
   }
-
-  h3 {
-    padding: 0 10px; border-left: 2px solid #e2e2e2;
-  }
-
   code {
     background-color: $alt-bg-color-dark;
-    color: $link-color-dark;
-  }
+     color: $fg-color-dark;
+   }
 
-b,
-em {
-  font-weight: 700;
-  color:rgb(238, 96, 93);
-}
+   // fix color schemes which do not explicitly set fg-color
+   .highlight {
+     pre {
 
+    
+          
+            
+    
 
-  // fix color schemes which do not explicitly set fg-color
-  .highlight {
-    pre {
+          
+    
+    
+  
       color: $fg-color;
     }
   }
-
   pre {
     code {
       background-color: inherit;
       color: inherit;
     }
   }
-
   blockquote {
-    border-left: 4px solid $alt-bg-color-dark;
-    border-top: 0.2em solid $alt-bg-color-dark;
-    border-right: 0.2em solid $alt-bg-color-dark;
-    display: block;
-    border-radius: 13px;
-    background-color: $alt-bg-color-dark;
-    border-bottom: 0.7em solid $alt-bg-color-dark;
+    border-left: 2px solid $alt-bg-color-dark;
   }
-
-  hr {
-    height: 1px;
-    padding: 0;
-    border: none;
-    border-top: medium solidid #333;
-    text-align: center;
-    background-image: linear-gradient(to right, #303134, rgba(248, 57, 41, 0.75), #303134);
-  }
-
   th,
   td {
     padding: 1.6rem;
   }
-
   table {
     border-collapse: collapse;
   }
-
   table td,
   table th {
     border: 2px solid $alt-fg-color-dark;
   }
-
   table tr:first-child th {
     border-top: 0;
   }
-
   table tr:last-child td {
     border-bottom: 0;
   }
-
   table tr td:first-child,
   table tr th:first-child {
     border-left: 0;
   }
-
   table tr td:last-child,
   table tr th:last-child {
     border-right: 0;
   }
 }
-
 body.colorscheme-dark {
   @include base_dark();
 }
-
 body.colorscheme-auto {
   @media (prefers-color-scheme: dark) {
     @include base_dark();
