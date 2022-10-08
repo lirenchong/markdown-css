@@ -27,9 +27,33 @@
       text-decoration: none;
     }
   }
+
+  h1 {
+    color: #EC605C;
+  }
+
+  h3 {
+    padding: 0 10px; border-left: 2px solid #e2e2e2;
+  }
+
+  h4 {
+    padding: 0 10px; border-left: 1px solid #e2e2e2;
+  }
+
+  h5 {
+    padding: 0 10px; border-left: 1px solid #e2e2e2;
+  }
+
   code {
     background-color: $alt-bg-color-dark;
-     color: $fg-color-dark;
+    color: $link-color-dark;
+    font-size: 0.95em;
+   }
+
+   b,
+   em {
+     font-weight: 700;
+     color:rgb(238, 96, 93);
    }
 
    // fix color schemes which do not explicitly set fg-color
@@ -55,7 +79,15 @@
     }
   }
   blockquote {
-    border-left: 2px solid $alt-bg-color-dark;
+    border-left: 4px solid $alt-bg-color-dark;
+  }
+  hr {
+    height: 1px;
+    padding: 0;
+    border: none;
+    border-top: medium solidid #333;
+    text-align: center;
+    background-image: linear-gradient(to right, #303134, rgba(248, 57, 41, 0.75), #303134);
   }
   th,
   td {

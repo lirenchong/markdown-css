@@ -65,6 +65,7 @@ h1 {
     font-size: 3rem;
     line-height: 3.4rem;
   }
+  color: #EC605C;
 }
 h2 {
   font-size: 2.8rem;
@@ -73,6 +74,7 @@ h2 {
     font-size: 2.6rem;
     line-height: 3rem;
   }
+  padding: 0 10px; border-left: 4px solid #EC605C;
 }
 h3 {
   font-size: 2.4rem;
@@ -81,6 +83,7 @@ h3 {
     font-size: 2.2rem;
     line-height: 2.6rem;
   }
+  padding: 0 10px; border-left: 4px solid #303134;
 }
 h4 {
   font-size: 2.2rem;
@@ -89,6 +92,7 @@ h4 {
     font-size: 2rem;
     line-height: 2.4rem;
   }
+  padding: 0 10px; border-left: 2px solid #303134;
 }
 h5 {
   font-size: 2rem;
@@ -97,6 +101,7 @@ h5 {
     font-size: 1.8rem;
     line-height: 2.2rem;
   }
+  padding: 0 10px; border-left: 1px solid #303134;
 }
 h6 {
   font-size: 1.8rem;
@@ -105,10 +110,16 @@ h6 {
     font-size: 1.6rem;
     line-height: 2rem;
   }
+  padding: 0 10px; border-left: 1px solid #989798;
 }
 b,
 strong {
    font-weight: 700;
+ }
+ b,
+ em {
+   font-weight: 700;
+   color:#EC605C;
  }
 
  .highlight>div,
@@ -146,16 +157,27 @@ code {
   font-size: 1.6rem;
   font-weight: 400;
   background-color: $alt-bg-color;
-  color: $fg-color;
+  color: #3479F6;
   border-radius: 0.6rem;
   padding: 0.3rem 0.6rem;
+}
+blockquote:before {
+  display: inline-block;
+  content: "“";
+  font-size: 2em;
+  color: #989798;
+  margin-top: 10px;
+  font-family: Arial, serif;
+  line-height: 1em;
+  font-weight: 700;
 }
 blockquote {
   border-left: 2px solid $alt-bg-color;
   padding-left: 2rem;
   line-height: 2.2rem;
   font-weight: 400;
-  font-style: italic;
+  display: block;
+  background-color: $alt-bg-color;
 }
 th,
 td {
@@ -183,7 +205,18 @@ table tr th:last-child {
   border-right: 0;
 }
 img {
-  max-width: 100%;
+  max-width: 95%;
+  border-radius: 13px; 
+  margin: 0px auto; 
+  display: block;
+}
+hr {
+  height: 1px;
+  padding: 0;
+  border: none;
+  border-top: medium solidid #333;
+  text-align: center;
+  background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(248, 57, 41, 0.75), rgb(255, 255, 255));
 }
 figure {
   text-align: center;
